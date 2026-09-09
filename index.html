@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Training Sheffield | 1-2-1 Coaching | The Coaching Club</title>
+<meta name="description" content="1-2-1 personal training in Sheffield. Get fitter, stronger and more confident — with a plan built around your life. Free consultation, no obligation. From £160/month.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="canonical" href="https://start.coachingclubuk.com/">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-mobile.webp" media="(max-width:859px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width:860px)" fetchpriority="high">
+<style>
+
+@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+.chip{border-radius:10px;padding:12px 16px;min-height:44px;font:400 13.5px/1 Inter,sans-serif;cursor:pointer;border:1px solid rgba(240,237,232,.18);background:transparent;color:#b3ada5}
+.chip.on{border:1px solid #ff6a1f;background:rgba(255,106,31,.16);color:#ffb489;font-weight:500}
+.submit{width:100%;min-height:56px;border-radius:10px;padding:16px 0;font:600 16px/1.2 Inter,sans-serif;cursor:pointer;margin-bottom:12px;border:1px solid #ff6a1f;background:#ff6a1f;color:#140b04;box-shadow:0 8px 30px rgba(255,106,31,.24)}
+.submit.sent{border-color:#6ea86a;background:rgba(110,168,106,.16);color:#a9d0a5;box-shadow:none}
+.submit.error{border-color:#c2603f;background:rgba(194,96,63,.16);color:#e5a68c;box-shadow:none}
+
+*{box-sizing:border-box}
+body{margin:0;padding-bottom:84px;background:#0c0c0b;color:#f0ede8;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#ff8a4c;text-decoration:none}a:hover{color:#ffb489}
+img{max-width:100%;display:block}
+details summary::-webkit-details-marker{display:none}
+details summary{position:relative;padding-right:30px;min-height:44px;display:flex;align-items:center}
+details summary::after{content:"+";position:absolute;right:2px;font-size:22px;font-weight:300;color:#ff6a1f;line-height:1}
+details[open] summary::after{content:"–"}
+input,textarea,button{font-family:inherit;font-size:16px}
+input:focus-visible,textarea:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #ff6a1f;outline-offset:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.sec{padding:44px 0}
+.h1{margin:0 0 16px;font:300 clamp(34px,9vw,58px)/1.04 Inter,sans-serif;letter-spacing:-.03em;color:#faf8f5;text-wrap:pretty}
+.h2{margin:0 0 14px;font:300 clamp(26px,6.6vw,38px)/1.13 Inter,sans-serif;letter-spacing:-.025em;color:#faf8f5;text-wrap:pretty}
+.kick{font:500 11px/1 Inter,sans-serif;color:#ff6a1f;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.lede{margin:0 0 24px;font:400 clamp(15.5px,4.2vw,17px)/1.62 Inter,sans-serif;color:#b3ada5;text-wrap:pretty;max-width:56ch}
+.p{margin:0 0 14px;font:400 15px/1.7 Inter,sans-serif;color:#8f8a83;text-wrap:pretty;max-width:60ch}
+.btn{display:flex;align-items:center;justify-content:center;text-align:center;min-height:56px;padding:16px 24px;border-radius:10px;border:1px solid #ff6a1f;background:#ff6a1f;color:#140b04;font:600 16px/1.2 Inter,sans-serif;box-shadow:0 8px 30px rgba(255,106,31,.24)}
+.btn:hover{background:#ff7f3d;color:#140b04}
+.btn-ghost{display:flex;align-items:center;justify-content:center;text-align:center;min-height:52px;padding:14px 22px;border-radius:10px;border:1px solid rgba(240,237,232,.24);background:transparent;color:#c9c3bb;font:500 15px/1.2 Inter,sans-serif}
+.btn-ghost:hover{border-color:rgba(240,237,232,.5);color:#f0ede8}
+.micro{font:400 12.5px/1.6 Inter,sans-serif;color:#6d6862}
+.card{border:1px solid rgba(240,237,232,.12);border-radius:12px;background:#141312;padding:20px}
+.grid{display:grid;gap:14px}
+.stack{display:flex;flex-direction:column;gap:12px}
+.slot{background:repeating-linear-gradient(135deg,#1c1b18 0 10px,#151412 10px 20px);display:flex;align-items:flex-end;padding:12px}
+.slot span{font:400 10px/1.3 ui-monospace,Menlo,monospace;color:#6d6862}
+.band{background:#16150f;background-image:radial-gradient(120% 100% at 20% 0%,rgba(255,106,31,.26) 0%,rgba(255,106,31,0) 64%);border-top:1px solid rgba(255,106,31,.22);border-bottom:1px solid rgba(255,106,31,.22)}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:10px;align-items:center;padding:12px 16px 18px;background:linear-gradient(180deg,rgba(12,12,11,0),#0c0c0b 26%)}
+.desk{display:none}
+@media (min-width:860px){
+ .wrap{padding:0 44px}
+ .sec{padding:72px 0}
+ body{padding-bottom:0}
+ .stickybar{display:none}
+ .desk{display:flex}
+ .two{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+ .two-top{align-items:start}
+ .g3{grid-template-columns:repeat(3,1fr);gap:20px}
+ .g2{grid-template-columns:1fr 1fr;gap:20px}
+ .btn,.btn-ghost{display:inline-flex}
+ .ctarow{display:flex;gap:12px;flex-wrap:wrap}
+}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tick{animation:none!important}}
+</style>
+</head>
+<body>
+<div>
+
+<header style="position:sticky;top:0;z-index:30;background:rgba(12,12,11,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(240,237,232,.12)">
+<div class="wrap" style="display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px">
+<img src="https://irp.cdn-website.com/b94f9a08/dms3rep/multi/opt/white_logo-1920w.png" width="120" height="30" alt="The Coaching Club" style="height:30px;width:auto;object-fit:contain">
+<div class="desk" style="align-items:center;gap:24px;font:400 13px/1 Inter,sans-serif">
+<a href="#results" style="color:#b3ada5">Results</a>
+<a href="#how" style="color:#b3ada5">How it works</a>
+<a href="#pricing" style="color:#b3ada5">What it costs</a>
+<a href="#faq" style="color:#b3ada5">FAQs</a>
+</div>
+<a href="#apply" class="btn" style="min-height:44px;padding:12px 18px;font-size:14px;box-shadow:none">Book your free consultation</a>
+</div>
+</header>
+
+<section style="position:relative">
+<div style="position:relative;min-height:78vh;display:flex;align-items:flex-end">
+<picture><source media="(max-width:859px)" srcset="img/hero-mobile.webp" width="720" height="960"><img src="img/hero.webp" width="883" height="883" fetchpriority="high" decoding="async" alt="Jack coaching a client at The Coaching Club in Sheffield" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%"></picture>
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,11,.55) 0%,rgba(12,12,11,.3) 30%,rgba(12,12,11,.97) 80%)"></div>
+<div class="wrap" style="position:relative;padding-top:40px;padding-bottom:32px;width:100%">
+<div style="display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,106,31,.5);background:rgba(255,106,31,.1);border-radius:100px;padding:7px 13px;font:500 11px/1 Inter,sans-serif;color:#ffb489;letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px">Sheffield · 4 spaces this month</div>
+<h1 class="h1" style="max-width:15ch">Fitter. Stronger. More confident. <span style="color:#ff6a1f">For good this time.</span></h1>
+<p class="lede" style="color:#c9c3bb;max-width:34ch">1-2-1 coaching built around your job, your kids and your life — not a plan you'll quit by March.</p>
+<a href="#apply" class="btn" style="margin-bottom:12px">Book your free consultation →</a>
+<div class="micro" style="text-align:center;margin-bottom:14px">Takes 2 minutes · No pressure, no pitch · From £160/month</div>
+<div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px"><span style="font:500 14px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:1.5px">★★★★★</span><span class="micro">5.0 from 44 reviews on Google</span></div>
+<div style="display:flex;gap:18px;padding-top:20px;border-top:1px solid rgba(240,237,232,.14);flex-wrap:wrap">
+<div><div style="font:400 21px/1 Inter,sans-serif;color:#faf8f5">200+</div><div class="micro" style="margin-top:6px">transformed</div></div>
+<div><div style="font:400 21px/1 Inter,sans-serif;color:#faf8f5">10,000+</div><div class="micro" style="margin-top:6px">hours coached</div></div>
+<div><div style="font:400 21px/1 Inter,sans-serif;color:#faf8f5">48</div><div class="micro" style="margin-top:6px">clients right now</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="overflow:hidden;border-bottom:1px solid rgba(240,237,232,.1);padding:13px 0;background:#111110">
+<div class="tick" style="display:flex;gap:32px;width:max-content;animation:mq 30s linear infinite;font:400 13px/1 Inter,sans-serif;color:#8f8a83;white-space:nowrap">
+<span>Mo <b style="color:#ff6a1f;font-weight:500">−30kg, training for Hyrox</b></span><span>Kate <b style="color:#ff6a1f;font-weight:500">confident on the gym floor</b></span><span>Mark <b style="color:#ff6a1f;font-weight:500">−28kg</b></span><span>Hasan <b style="color:#ff6a1f;font-weight:500">loves training now</b></span><span>Gemma <b style="color:#ff6a1f;font-weight:500">back after a baby, twice</b></span><span>David <b style="color:#ff6a1f;font-weight:500">−40kg</b></span><span>John <b style="color:#ff6a1f;font-weight:500">dad bod to built</b></span><span>Heather <b style="color:#ff6a1f;font-weight:500">new PBs every month</b></span>
+<span>Mo <b style="color:#ff6a1f;font-weight:500">−30kg, training for Hyrox</b></span><span>Kate <b style="color:#ff6a1f;font-weight:500">confident on the gym floor</b></span><span>Mark <b style="color:#ff6a1f;font-weight:500">−28kg</b></span><span>Hasan <b style="color:#ff6a1f;font-weight:500">loves training now</b></span><span>Gemma <b style="color:#ff6a1f;font-weight:500">back after a baby, twice</b></span><span>David <b style="color:#ff6a1f;font-weight:500">−40kg</b></span><span>John <b style="color:#ff6a1f;font-weight:500">dad bod to built</b></span><span>Heather <b style="color:#ff6a1f;font-weight:500">new PBs every month</b></span>
+</div>
+</div>
+
+<section class="sec wrap">
+<h2 class="h2" style="max-width:18ch">You've started before. Then life got in the way.</h2>
+<p class="p">January gym memberships. That app you deleted. The programme a mate sent you. Each one worked for a bit — then life got busy and it all unravelled.</p>
+<p class="p">That's not a willpower problem. Willpower is the thing that runs out. What's been missing is a plan built for <em style="color:#c9c3bb;font-style:normal">your</em> week and someone checking you're actually doing it.</p>
+<p style="margin:0 0 22px;font:400 16px/1.6 Inter,sans-serif;color:#ff9257">That's the whole job.</p>
+<div class="stack">
+<div class="card"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:7px">Coaching, not random workouts</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">Every session is part of a plan that progresses as you do — not whatever's free in the gym that day.</p></div>
+<div class="card"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:7px">Habits that survive a bad week</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">Built around your shifts, your family and your weekends. Miss one? We adjust, we don't start over.</p></div>
+<div class="card"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:7px">Food you'll actually eat</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">No banned foods, no weighing broccoli, no guilt. Small changes that hold when you're tired.</p></div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap" style="padding-top:36px;padding-bottom:36px">
+<div class="h2" style="margin-bottom:10px;max-width:20ch">Find out if this would work for you</div>
+<p style="margin:0 0 20px;font:400 14px/1.6 Inter,sans-serif;color:#e0a179">A 20-minute chat. No pressure, no pitch — you'll leave knowing what's realistic either way.</p>
+<div class="ctarow"><a href="#apply" class="btn">Book your free consultation</a></div>
+</div>
+</section>
+
+<section id="results" class="sec wrap" style="scroll-margin-top:70px">
+<div class="kick">Results</div>
+<h2 class="h2">Real people, real results</h2>
+<p class="lede">Busy jobs. Kids. Night shifts. Bad knees. All of them thought they'd be the exception.</p>
+<div class="grid g3">
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/mo.webp" width="600" height="800" loading="lazy" decoding="async" alt="Mo holding the weight he lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−30kg</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Mo Hassan</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">Started at 128kg and out of breath on the stairs. Now training for a Hyrox with his wife.</p></div>
+</div>
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/simran.webp" width="600" height="800" loading="lazy" decoding="async" alt="Simran holding the weight she lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−20kg</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Simran Kaur</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">NHS doctor, single mum, 12-hour shifts. If she found the time, the time is findable.</p></div>
+</div>
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/rasi.webp" width="600" height="800" loading="lazy" decoding="async" alt="Rasi holding the weight he lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−35kg</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Rasi Sivapatham</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">Runs multiple businesses. Turns out the packed diary was never the problem.</p></div>
+</div>
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/mark.webp" width="600" height="800" loading="lazy" decoding="async" alt="Mark holding the weight he lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−28kg</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Mark Ellis</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">118kg down to 90kg — a busy dad who still enjoys the odd beer.</p></div>
+</div>
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/gemma.webp" width="600" height="800" loading="lazy" decoding="async" alt="Gemma holding the weight she lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−20kg, twice</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Gemma Burkinshaw</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">Lost 20kg, had a baby, came back and did the whole thing again.</p></div>
+</div>
+<div style="border:1px solid rgba(240,237,232,.12);border-radius:12px;overflow:hidden;background:#141312">
+<div style="position:relative"><img src="img/abi.webp" width="600" height="800" loading="lazy" decoding="async" alt="Abi holding the weight she lost" style="width:100%;aspect-ratio:3/4;object-fit:cover"><div style="position:absolute;left:12px;bottom:12px;background:rgba(12,12,11,.82);border:1px solid rgba(255,106,31,.5);border-radius:100px;padding:6px 12px;font:600 13px/1 Inter,sans-serif;color:#ff8a4c">−10kg</div></div>
+<div style="padding:18px"><div style="font:500 15.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Abi Adamson</div><p style="margin:0;font:400 13.5px/1.6 Inter,sans-serif;color:#8f8a83">Wasn't sure lasting change was possible for her. It was — and still counting.</p></div>
+</div>
+</div>
+<a href="#apply" class="btn" style="margin-top:24px">Start where they started</a>
+</section>
+
+<section class="sec wrap" style="padding-top:0">
+<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px">
+<span style="font:500 17px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px">★★★★★</span>
+<span style="font:500 14px/1 Inter,sans-serif;color:#faf8f5">5.0 on Google</span>
+<span class="micro">44 reviews</span>
+</div>
+<h2 class="h2">What people say once they've started</h2>
+<div class="grid g2" style="margin-top:20px">
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“Great for complete beginners like me who found taking the initial step of going to the gym extremely challenging. Also great if you're self conscious like I was — he puts you at ease.”</p>
+<div class="micro">Joshua Wright</div>
+</div>
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“I'd always avoided gym equipment through lack of confidence. Jack showed me how to use it safely, kept me on track, and I've lost almost 2 stone.”</p>
+<div class="micro">Kate Preston</div>
+</div>
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“He understands that people have lives and commitments, and works around them. Encouraging, supportive, and aware of the limits he sets.”</p>
+<div class="micro">Mike Mahoney</div>
+</div>
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“I always felt I wasn't a ‘gym person'. His patience and gradual, challenging plans changed my attitude — I now absolutely love working out.”</p>
+<div class="micro">Hasan Shwaish</div>
+</div>
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“Restarting my fitness journey before my rescheduled wedding, I lost 11kg in just 10 weeks. Incredibly supportive and friendly throughout.”</p>
+<div class="micro">Michael Hudson</div>
+</div>
+<div class="card">
+<div style="font:500 13px/1 Inter,sans-serif;color:#ffb43f;letter-spacing:2px;margin-bottom:12px">★★★★★</div>
+<p style="margin:0 0 14px;font:400 14.5px/1.65 Inter,sans-serif;color:#e9e5e0;text-wrap:pretty">“He knows just how hard to push. Clear instructions, emphasis on good form, and I leave every session feeling I've achieved something new.”</p>
+<div class="micro">Heather Bower</div>
+</div>
+</div>
+<a href="#apply" class="btn" style="margin-top:20px">Be the next one</a>
+</section>
+
+<section id="how" class="sec wrap" style="padding-top:0;scroll-margin-top:70px">
+<div class="kick">How it works</div>
+<h2 class="h2">Three steps, starting today</h2>
+<div class="grid g3" style="margin-top:22px">
+<div style="border-top:2px solid #ff6a1f;padding-top:16px"><div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6d6862;margin-bottom:10px">01</div><div style="font:500 16.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Free consultation</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">Twenty minutes on your goals, your history and what's gone wrong before. No obligation, no hard sell — if I'm not right for you I'll say so.</p></div>
+<div style="border-top:2px solid rgba(240,237,232,.16);padding-top:16px"><div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6d6862;margin-bottom:10px">02</div><div style="font:500 16.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Your plan, built around your week</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">Training and food designed for the life you actually have — the school run, the night shifts, the Friday takeaway.</p></div>
+<div style="border-top:2px solid rgba(240,237,232,.16);padding-top:16px"><div style="font:400 12px/1 ui-monospace,Menlo,monospace;color:#6d6862;margin-bottom:10px">03</div><div style="font:500 16.5px/1.3 Inter,sans-serif;color:#faf8f5;margin-bottom:8px">Weekly coaching that keeps you going</div><p style="margin:0;font:400 13.5px/1.65 Inter,sans-serif;color:#8f8a83">Sessions, check-ins and someone who notices when you go quiet. That's why this sticks when the apps didn't.</p></div>
+</div>
+</section>
+
+<section id="pricing" class="sec wrap" style="padding-top:0;scroll-margin-top:70px">
+<div class="kick">What you get</div>
+<h2 class="h2">Everything's included</h2>
+<div class="card" style="padding:24px;border-color:rgba(255,106,31,.3)">
+<div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">Weekly 1-2-1 sessions in a private Sheffield studio</span></div><div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">A training plan rebuilt around you every month</span></div><div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">Simple nutrition guidance — no meal plans, no banned foods</span></div><div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">Message support between sessions when life gets messy</span></div><div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">Monthly check-ins: photos, numbers, and how you actually feel</span></div><div style="display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid rgba(240,237,232,.09)"><span style="color:#ff6a1f;font:500 15px/1.5 Inter,sans-serif">✓</span><span style="font:400 14.5px/1.5 Inter,sans-serif;color:#c9c3bb">A coach who notices when you go quiet</span></div>
+
+<div style="padding-top:20px;margin-top:6px">
+<div style="display:flex;align-items:baseline;gap:10px;margin-bottom:8px"><span style="font:300 34px/1 Inter,sans-serif;color:#faf8f5">From £160</span><span class="micro">/month</span></div>
+<p class="micro" style="margin:0 0 18px;max-width:44ch">That's under £40 a week for weekly 1-2-1 sessions — less than most people spend on takeaways they don't enjoy. Packages depend on how often you train; we'll pick the right one on your call.</p>
+<a href="#apply" class="btn">Book your free consultation</a>
+</div>
+
+</div>
+</section>
+
+<section class="sec wrap" style="padding-top:0">
+<div class="grid g2">
+<div class="card" style="border-color:rgba(255,106,31,.28)">
+<div class="kick" style="margin-bottom:12px">This is for you if</div>
+<div class="stack" style="gap:9px">
+<div style="display:flex;gap:10px"><span style="color:#ff6a1f">✓</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#c9c3bb">You've got a real goal — losing weight, getting stronger, or just feeling like yourself again</span></div>
+<div style="display:flex;gap:10px"><span style="color:#ff6a1f">✓</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#c9c3bb">You're busy, and any plan has to fit around work and family</span></div>
+<div style="display:flex;gap:10px"><span style="color:#ff6a1f">✓</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#c9c3bb">You've not trained in years and the gym feels intimidating</span></div>
+<div style="display:flex;gap:10px"><span style="color:#ff6a1f">✓</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#c9c3bb">You want someone in your corner, not a PDF</span></div>
+</div>
+</div>
+<div class="card" style="background:#111110">
+<div style="font:500 11px/1 Inter,sans-serif;color:#75706a;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px">It's not for you if</div>
+<div class="stack" style="gap:9px">
+<div style="display:flex;gap:10px"><span style="color:#75706a">✕</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#8f8a83">You want a dramatic transformation in three weeks</span></div>
+<div style="display:flex;gap:10px"><span style="color:#75706a">✕</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#8f8a83">You're after shakes, pills or a detox</span></div>
+<div style="display:flex;gap:10px"><span style="color:#75706a">✕</span><span style="font:400 14px/1.55 Inter,sans-serif;color:#8f8a83">You can't commit to one session a week for three months</span></div>
+</div>
+<p class="micro" style="margin:16px 0 0">Being honest about this saves us both a wasted phone call.</p>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0">
+<div class="wrap">
+<div class="two">
+<div>
+<div class="kick">Your coaches</div>
+<h2 class="h2">Jack Oxlade, Head Coach</h2>
+<p class="p">Ten thousand hours on the gym floor, 200-odd people through the door, and not one of them handed a generic programme.</p>
+<p class="p">I coach people who feel behind. Nobody shouts, nobody films themselves, and nobody's judging what you can lift on day one. You'll get someone who remembers your kids' names and notices when you've gone quiet for a fortnight.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px">
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">BSc Sport &amp; Exercise Science</span>
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Level 3 Personal Trainer</span>
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Insured &amp; DBS checked</span>
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Sheffield studio</span>
+</div>
+</div>
+<div style="border-radius:12px;overflow:hidden;margin-top:24px"><img src="img/jack.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Jack Oxlade coaching" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 14%"></div>
+</div>
+<div class="two" style="margin-top:44px">
+<div>
+<h2 class="h2">Cameron Cooper, Coach</h2>
+<p class="p">Rehab and performance specialist. If you're carrying an old injury, a dodgy shoulder or a back that's stopped you training before, Cameron builds the plan that works around it — and then past it.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px">
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Level 3 Personal Trainer</span>
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Rehab Expert</span>
+<span style="border:1px solid rgba(240,237,232,.16);border-radius:100px;padding:7px 13px;font:400 12px/1 Inter,sans-serif;color:#b3ada5">Performance Coach</span>
+</div>
+</div>
+<div style="border-radius:12px;overflow:hidden;margin-top:24px"><img src="img/cameron.webp" width="900" height="675" loading="lazy" decoding="async" alt="Cameron Cooper training with a kettlebell" style="width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%"></div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="sec wrap" style="padding-top:0;scroll-margin-top:70px">
+<div class="kick">Honest answers</div>
+<h2 class="h2" style="margin-bottom:20px">What people worry about</h2>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0" open=""><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">I'm really unfit. Will I embarrass myself?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">No. Most people start exactly where you are. Session one is mostly talking and gentle movement, in a private studio — no queues, no mirrors full of gym bros, nobody watching.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">I've failed at this before. Why would this be different?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">Because last time nobody was watching. We fix the actual reason it stalled — no structure and no accountability once motivation dipped — rather than asking you to want it more.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">I genuinely don't have time.</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">Two hours a week. An NHS doctor on 12-hour shifts and a bloke running three businesses both found it. We build around your diary, not the other way round.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">Do I have to give up the food I love?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">No. No banned foods, no meal plan you'll abandon. Mark lost 28kg and still has a beer. We change the smallest number of things that actually move the needle.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">I'm in my 50s/60s. Am I too old?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">No. We coach every age and ability, working around dodgy knees, backs and shoulders. Progress at your pace beats intensity you can't sustain.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">What does it cost, and am I tied in?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">From £160 a month for weekly 1-2-1 sessions. We'll find the right package on your free call — and you'll know the exact number before you commit to anything.</p></details>
+<details style="border-bottom:1px solid rgba(240,237,232,.12);padding:6px 0"><summary style="font:500 15.5px/1.4 Inter,sans-serif;color:#faf8f5;cursor:pointer;list-style:none">What actually happens on the free call?</summary><p style="margin:6px 0 16px;font:400 14px/1.7 Inter,sans-serif;color:#8f8a83;max-width:56ch">Twenty minutes. I ask what you've tried, what your week looks like and what you want to be able to do. You ask me anything. Then we both decide — no follow-up spam either way.</p></details>
+</section>
+
+<section id="apply" class="sec wrap" style="padding-top:0;scroll-margin-top:70px">
+<div class="card" style="border-color:rgba(255,106,31,.32);padding:24px;box-shadow:0 16px 40px rgba(0,0,0,.5)">
+<div class="kick" style="margin-bottom:12px">4 spaces this month</div>
+<h2 class="h2" style="font-size:clamp(24px,6vw,32px)">Book your free consultation</h2>
+<p style="margin:0 0 22px;font:400 14px/1.65 Inter,sans-serif;color:#8f8a83">Two minutes to fill in. I read every one myself and reply within two days.</p>
+<form id="apply-form" action="https://formspree.io/f/mgoggeep" method="POST">
+<label style="display:block;margin-bottom:12px"><span style="display:block;font:400 12px/1 Inter,sans-serif;color:#b3ada5;margin-bottom:8px">Your name</span><input name="name" required="required" placeholder="First name" style="width:100%;min-height:50px;border:1px solid rgba(240,237,232,.18);border-radius:10px;padding:13px 14px;color:#f0ede8;background:#0c0c0b"></label>
+<label style="display:block;margin-bottom:12px"><span style="display:block;font:400 12px/1 Inter,sans-serif;color:#b3ada5;margin-bottom:8px">Email</span><input name="email" type="email" required="required" placeholder="you@email.com" style="width:100%;min-height:50px;border:1px solid rgba(240,237,232,.18);border-radius:10px;padding:13px 14px;color:#f0ede8;background:#0c0c0b"></label>
+<label style="display:block;margin-bottom:12px"><span style="display:block;font:400 12px/1 Inter,sans-serif;color:#b3ada5;margin-bottom:8px">Mobile <span style="color:#6d6862">— quickest way to reach you</span></span><input name="phone" type="tel" required="required" placeholder="07…" style="width:100%;min-height:50px;border:1px solid rgba(240,237,232,.18);border-radius:10px;padding:13px 14px;color:#f0ede8;background:#0c0c0b"></label>
+<div style="margin-bottom:12px">
+<span style="display:block;font:400 12px/1 Inter,sans-serif;color:#b3ada5;margin-bottom:9px">What's your main goal?</span>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button type="button" class="chip on" data-group="goal" data-value="Lose weight">Lose weight</button><button type="button" class="chip" data-group="goal" data-value="Get stronger">Get stronger</button><button type="button" class="chip" data-group="goal" data-value="Feel fitter">Feel fitter</button><button type="button" class="chip" data-group="goal" data-value="All of it">All of it</button>
+</div>
+</div>
+<div style="margin-bottom:18px">
+<span style="display:block;font:400 12px/1 Inter,sans-serif;color:#b3ada5;margin-bottom:9px">Sessions a week you could realistically do</span>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button type="button" class="chip" data-group="freq" data-value="1×">1×</button><button type="button" class="chip on" data-group="freq" data-value="2×">2×</button><button type="button" class="chip" data-group="freq" data-value="3×">3×</button><button type="button" class="chip" data-group="freq" data-value="Not sure">Not sure</button>
+</div>
+</div>
+<input type="hidden" name="_subject" value="New consultation enquiry — coachingclubuk.com">
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<input type="hidden" name="goal" value="Lose weight"><input type="hidden" name="sessions per week" value="2×"><button type="submit" id="submit-btn" class="submit">Book your free consultation →</button>
+</form>
+<div class="micro" style="text-align:center">No obligation · Your details stay with me · Spaces limited to keep quality high</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap" style="padding-top:52px;padding-bottom:52px;text-align:center">
+<div class="kick" style="color:#ff8a4c">Structure · Accountability · Results</div>
+<h2 class="h2" style="max-width:16ch;margin-left:auto;margin-right:auto">Twelve weeks will pass either way</h2>
+<p style="margin:0 auto 26px;max-width:44ch;font:400 15.5px/1.65 Inter,sans-serif;color:#c9c3bb;text-wrap:pretty">You can be twelve weeks further along, or exactly here reading this again. One conversation decides which.</p>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:420px;margin:0 auto">
+<a href="#apply" class="btn">Book your free consultation</a>
+</div>
+<div class="micro" style="margin-top:18px">Free · No obligation · 4 spaces this month</div>
+</div>
+</section>
+
+<footer class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding-top:26px;padding-bottom:30px;font:400 12px/1.6 Inter,sans-serif;color:#6d6862">
+<span>The Coaching Club · Sheffield</span>
+<span style="color:#8f8a83">07940 990 498</span>
+</footer>
+
+<div class="stickybar">
+<a href="#apply" class="btn" style="flex:1">Book your free consultation</a>
+</div>
+
+</div>
+<script>
+(function(){
+  var f=document.getElementById('apply-form'),btn=document.getElementById('submit-btn'),cta='Book your free consultation';
+  function track(n){try{window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:n});if(window.gtag)window.gtag('event',n);if(window.fbq&&n==='consultation_form_submit')window.fbq('track','Lead');}catch(e){}}
+  document.addEventListener('click',function(e){
+    var c=e.target.closest&&e.target.closest('.chip');
+    if(c){var g=c.getAttribute('data-group');f.querySelectorAll('.chip[data-group="'+g+'"]').forEach(function(x){x.classList.remove('on')});c.classList.add('on');f.querySelector('input[name="'+(g==='goal'?'goal':'sessions per week')+'"]').value=c.getAttribute('data-value');return;}
+    var a=e.target.closest&&e.target.closest('a[href="#apply"]');if(a)track('cta_click');
+  },true);
+  f.addEventListener('submit',function(e){
+    e.preventDefault();btn.textContent='Sending…';btn.disabled=true;
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}}).then(function(r){if(!r.ok)throw 0;btn.className='submit sent';btn.textContent="Got it — I'll be in touch within 2 days";track('consultation_form_submit');f.reset();}).catch(function(){btn.className='submit error';btn.textContent="Didn't send — check connection and try again";btn.disabled=false;});
+  });
+  window.addEventListener('load',function(){setTimeout(function(){
+    if(window.google_tag_manager)return;window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});
+    ['GTM-5TX4CLC','GTM-TKP3NX9'].forEach(function(id){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+id;document.head.appendChild(s);});
+  },1500);});
+})();
+</script>
+</body>
+</html>
