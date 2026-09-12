@@ -369,5 +369,52 @@ input:focus-visible,textarea:focus-visible,a:focus-visible,button:focus-visible,
   },1500);});
 })();
 </script>
+<!-- Ads tracking hardening - added 12 Sep 2026 -->
+<script>
+(function () {
+  var P = new URLSearchParams(location.search);
+  var IDS = ['gclid', 'gbraid', 'wbraid'];
+  IDS.forEach(function (k) {
+    var v = P.get(k);
+    if (v) { try { localStorage.setItem('cc_' + k, JSON.stringify({ v: v, t: Date.now() })); } catch (e) {} }
+  });
+  function clickId(k) {
+    var live = P.get(k);
+    if (live) { return live; }
+    try {
+      var s = JSON.parse(localStorage.getItem('cc_' + k) || 'null');
+      if (s && Date.now() - s.t < 90 * 864e5) { return s.v; }
+    } catch (e) {}
+    return '';
+  }
+  var form = document.querySelector('form[action*="formspree"]');
+  if (!form) { return; }
+  var meta = {
+    gclid: clickId('gclid'),
+    gbraid: clickId('gbraid'),
+    wbraid: clickId('wbraid'),
+    campaign: P.get('utm_campaign') || '',
+    keyword: P.get('utm_term') || '',
+    landing_url: location.href
+  };
+  Object.keys(meta).forEach(function (name) {
+    if (form.querySelector('[name="' + name + '"]')) { return; }
+    var i = document.createElement('input');
+    i.type = 'hidden';
+    i.name = name;
+    i.value = meta[name];
+    form.appendChild(i);
+  });
+  form.addEventListener('submit', function () {
+    if (!form.checkValidity()) { return; }
+    if (typeof gtag !== 'function') { return; }
+    gtag('event', 'conversion', {
+      send_to: 'AW-619288898/' + 'zVE2CKmQpNYBEMKypqcC',
+      value: 1.0,
+      currency: 'GBP'
+    });
+  }, true);
+})();
+</script>
 </body>
 </html>
